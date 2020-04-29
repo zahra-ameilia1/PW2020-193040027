@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Apr 2020 pada 15.13
+-- Waktu pembuatan: 29 Apr 2020 pada 17.41
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.11
 
@@ -42,16 +42,16 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`ID`, `Nama`, `NRP`, `Email`, `Jurusan`, `Gambar`) VALUES
-(1, 'Zahra Dwi Ameilia', '193040027', '193040027.zahra@mail.unpas.ac.id', 'Teknik Informatika', 'zahra.jpeg'),
-(2, 'Seli Suhaeli Septian', '193040015', '193040015.seli@mail.unpas.ac.id', 'Teknik Informatika', 'seli.jpeg'),
-(3, 'Kareena Kardin', '193040035', '193040035.kareena@mail.unpas.ac.id', 'Teknik Informatika', 'kareena.jpeg'),
-(4, 'Daffa Akhdan Fadillah', '193040036', '193040036.daffa@mail.unpas.ac.id', 'Teknik Informatika', 'daffa.jpeg'),
-(5, 'Ilham Akmal Rafi Pramudya', '193040038', '193040038.ilham@mail.unpas.ac.id', 'Teknik Informatika', 'ilham.jpeg'),
-(6, 'Dhiya Ulha Ramadhanty', '193040095', '193040095.dhiya@mail.unpas.ac.id', 'Teknik Informatika', 'dhiya.jpeg'),
-(7, 'Kenny Lauda Junior', '193040028', '193040028.kenny@mail.unpas.ac.id', 'Teknik Informatika', 'kenny.jpeg'),
-(8, 'Reza Febriyanti', '193040039', '193040039.reza@mail.unpas.ac.id', 'Teknik Informatika', 'reza.jpeg'),
-(9, 'Eka Gusnetta Putri Wahyudi', '193040120', '193040120.eka@mail.unpas.ac.id', 'Teknik Informatika', 'eka.jpeg'),
-(10, 'Ersha Bacharudin', '193040139', '193040139.ersha@mail.unpas.ac.id', 'Teknik Informatika', 'ersha.jpeg');
+(1, 'Zahra Dwi Ameilia', '193040027', '193040027.zahra@mail.unpas.ac.id', 'Teknik Informatika', 'ikon.png'),
+(2, 'Seli Suhaeli Septian', '193040015', '193040015.seli@mail.unpas.ac.id', 'Teknik Informatika', 'ikon.png'),
+(3, 'Kareena Kardin', '193040035', '193040035.kareena@mail.unpas.ac.id', 'Teknik Informatika', 'ikon.png'),
+(4, 'Daffa Akhdan Fadillah', '193040036', '193040036.daffa@mail.unpas.ac.id', 'Teknik Informatika', 'ikon.png'),
+(5, 'Ilham Akmal Rafi Pramudya', '193040038', '193040038.ilham@mail.unpas.ac.id', 'Teknik Informatika', 'ikon.png'),
+(6, 'Dhiya Ulha Ramadhanty', '193040095', '193040095.dhiya@mail.unpas.ac.id', 'Teknik Informatika', 'ikon.png'),
+(7, 'Kenny Lauda Junior', '193040028', '193040028.kenny@mail.unpas.ac.id', 'Desain Komunikasi Visual', 'ikon.png'),
+(8, 'Reza Febriyanti', '193040039', '193040039.reza@mail.unpas.ac.id', 'Pendidikan Ekonomi Akuntansi', 'ikon.png'),
+(9, 'Eka Gusnetta Putri Wahyudi', '193040120', '193040120.eka@mail.unpas.ac.id', 'Ilmu Hukum', 'ikon.png'),
+(10, 'Ersha Bacharudin', '193040139', '193040139.ersha@mail.unpas.ac.id', 'Teknik Industri', 'ikon.png');
 
 --
 -- Indexes for dumped tables
