@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Bulan Mei 2020 pada 07.53
+-- Waktu pembuatan: 07 Bulan Mei 2020 pada 08.06
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.11
 
@@ -70,7 +70,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin');
+(4, 'admin', '$2y$10$ll7gE5RrFb08iPNRQvKMyeuyB2wZynZK64a7z1CF6KKdBoAhCKK7u'),
+(5, 'raw', '$2y$10$c.IMDkHzZKrQ9JtmO9R9b.G1LVHGi263DHnIqsRExF5v6pRGKIJLy');
 
 --
 -- Indexes for dumped tables
@@ -102,7 +103,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

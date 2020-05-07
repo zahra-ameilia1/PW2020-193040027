@@ -28,11 +28,11 @@ function query($query)
 function tambah($data)
 {
   $conn = koneksi();
-  $nama = htmlspecialchars($data['Nama']);
-  $nrp = htmlspecialchars($data['NRP']);
-  $email = htmlspecialchars($data['Email']);
-  $jurusan = htmlspecialchars($data['Jurusan']);
-  $gambar = htmlspecialchars($data['Gambar']);
+  $nama = htmlspecialchars($data['nama']);
+  $nrp = htmlspecialchars($data['nrp']);
+  $email = htmlspecialchars($data['email']);
+  $jurusan = htmlspecialchars($data['jurusan']);
+  $gambar = htmlspecialchars($data['gambar']);
 
   $query = "INSERT INTO
               mahasiswa
@@ -55,7 +55,7 @@ function ubah($data)
 {
   $conn = koneksi();
 
-  $id = ($data['ID']);
+  $id = ($data['id']);
   $nama = htmlspecialchars($data['Nama']);
   $nrp = htmlspecialchars($data['NRP']);
   $email = htmlspecialchars($data['Email']);
@@ -63,11 +63,11 @@ function ubah($data)
   $gambar = htmlspecialchars($data['Gambar']);
 
   $query = "UPDATE mahasiswa SET
-            Nama = '$nama',
-            NRP = '$nrp',
-            Email = '$email',
-            Jurusan = '$jurusan',
-            Gambar = '$gambar'
+            nama = '$nama',
+            nrp = '$nrp',
+            email = '$email',
+            jurusan = '$jurusan',
+            gambar = '$gambar'
           WHERE id = $id";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   echo mysqli_error($conn);
@@ -79,7 +79,7 @@ function cari($keyword)
   $conn = koneksi();
 
   $query = "SELECT * FROM mahasiswa
-            WHERE nama LIKE '%keyword%'";
+            WHERE Nama LIKE '%$keyword%'";
 
   $result = mysqli_query($conn, $query);
   $rows = [];
