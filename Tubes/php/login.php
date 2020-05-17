@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
   <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
 
   <!-- my css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,8 +80,9 @@ if (isset($_POST['submit'])) {
 
 <body>
 
+  <!-- NAVBAR -->
   <div class="navbar-fixed">
-    <nav class="black">
+    <nav class="grey">
       <div class="container">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo">TOKO LAUDA</a>
@@ -90,35 +91,42 @@ if (isset($_POST['submit'])) {
     </nav>
   </div>
 
-  <div class="container">
-    <form action="" method="POST">
-      <?php if (isset($error)) : ?>
-        <p style="color: red; font-style: italic;">Username atau Password Salah!</p>
-      <?php endif; ?>
-      <table>
-        <tr>
-          <td><label for="username">Username</label></td>
-          <td>:</td>
-          <td><input type="text" name="username"></td>
-        </tr>
-        <tr>
-          <td><label for="password">Password</label></td>
-          <td>:</td>
-          <td><input type="password" name="password"></td>
-        </tr>
-      </table>
-      <p>
-        <label>
-          <input type="checkbox" class="filled-in" checked="checked" name="remember" />
-          <span>Remember me</span>
-        </label>
-      </p>
-      <button class="grey btn" type="submit" name="submit">LOGIN</button>
-      <a href="../index.php" class="waves-effect waves-light btn">BACK</a>
-    </form>
-    <div class="registrasi">
-      <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a></p>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card grey lighten-2">
+        <div class="card-content black-text">
+          <form action="" method="POST">
+            <?php if (isset($error)) : ?>
+              <p style="color: red; font-style: italic;">Username atau Password Salah!</p>
+            <?php endif; ?>
+            <table>
+              <tr>
+                <td><label for="username">Username</label></td>
+                <td>:</td>
+                <td><input type="text" name="username"></td>
+              </tr>
+              <tr>
+                <td><label for="password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" name="password"></td>
+              </tr>
+            </table>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" name="remember" />
+                <span>Remember me</span>
+              </label>
+            </p>
+            <button class="grey btn" type="submit" name="submit">LOGIN</button>
+            <a href="../index.php" class="grey btn">BACK</a>
+          </form>
+          <div class="registrasi">
+            <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a></p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
   </div>
 
 </body>
